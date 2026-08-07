@@ -81,7 +81,7 @@ header {
 #banner {
   position: relative;
   z-index: 2;
-  height: 100svh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
