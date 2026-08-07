@@ -110,7 +110,7 @@ header {
     z-index: 2;
     font-size: 3vw;
     color: white;
-    font-weight: 200;
+    font-weight: 600;
     animation: colorways 1.75s forwards 1.525s;
     opacity: 0;
     margin-right: -8vw;
@@ -140,12 +140,12 @@ header {
     margin-right: -4vw;
   }
   50% {
-    opacity: 0.75;
+    opacity: 0.65;
     letter-spacing: 5vw;
     margin-right: -5vw;
   }
   100% {
-    opacity: 0.75;
+    opacity: 0.65;
     letter-spacing: 8vw;
     margin-right: -8vw;
   }
@@ -296,11 +296,6 @@ footer {
 @media (max-width: 700px) {
   :root {
     --main-padding: 30px;
-  }
-  #banner {
-    h2 {
-      font-weight: 600;
-    }
   }
 }
 
