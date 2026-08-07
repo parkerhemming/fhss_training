@@ -127,6 +127,10 @@ header {
     width: 2.8ch;
   }
   35%,
+  99.999999% {
+    opacity: 1;
+    width: 10ch;
+  }
   100% {
     opacity: 1;
     width: 10ch;
