@@ -15,6 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        Promise.all([
+          document.fonts.load('900 1em "Outfit"'),
+          document.fonts.load('600 1em "Outfit"'),
+        ]).finally(() => {
+          document.documentElement.classList.add("fonts-ready");
+        });
+      });
+    </script>
   </head>
   <body>
     <header>

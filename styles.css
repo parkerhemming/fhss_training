@@ -92,11 +92,10 @@ header {
   h1 {
     font-family: "Outfit", sans-serif;
     z-index: 2;
-    font-weight: 1000;
+    font-weight: 900;
     font-size: 12vw;
     color: white;
     transform: scaleY(2.2);
-    animation: airJordan 4.5s forwards ease 0.5s;
     overflow: hidden;
     text-wrap: nowrap;
     text-align: center;
@@ -110,10 +109,17 @@ header {
     font-size: 3vw;
     color: white;
     font-weight: 600;
-    animation: colorways 1.75s forwards 1.525s;
     opacity: 0;
     margin-right: -8vw;
   }
+}
+
+.fonts-ready #banner h1 {
+  animation: airJordan 4.5s forwards ease 0.5s;
+}
+
+.fonts-ready #banner h2 {
+  animation: colorways 1.75s forwards 1.525s;
 }
 
 @keyframes airJordan {
