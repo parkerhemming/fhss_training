@@ -91,7 +91,11 @@ header {
 
   .title-reveal {
     opacity: 0;
-    clip-path: inset(-75% 50% -75% 50%);
+    width: 0ch;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 12vw;
+    clip-path: inset(-75% 0);
   }
 
   h1 {
@@ -128,16 +132,16 @@ header {
 @keyframes airJordan {
   0% {
     opacity: 1;
-    clip-path: inset(-75% 50% -75% 50%);
+    width: 0ch;
   }
   10%,
   15% {
-    clip-path: inset(-75% 36% -75% 36%);
+    width: 2.8ch;
   }
   35%,
   100% {
     opacity: 1;
-    clip-path: inset(-75% 0 -75% 0);
+    width: 10ch;
   }
 }
 
