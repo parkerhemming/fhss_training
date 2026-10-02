@@ -89,6 +89,11 @@ header {
   overflow: hidden;
   gap: 8vw;
 
+  .title-reveal {
+    opacity: 0;
+    clip-path: inset(-75% 100% -75% 0);
+  }
+
   h1 {
     font-family: "Outfit", sans-serif;
     z-index: 2;
@@ -96,11 +101,9 @@ header {
     font-size: 12vw;
     color: white;
     transform: scaleY(2.2);
-    overflow: hidden;
     text-wrap: nowrap;
     text-align: center;
     width: 100%;
-    opacity: 0;
   }
 
   h2 {
@@ -114,7 +117,7 @@ header {
   }
 }
 
-.fonts-ready #banner h1 {
+.fonts-ready #banner .title-reveal {
   animation: airJordan 4.5s forwards ease 0.5s;
 }
 
@@ -125,21 +128,16 @@ header {
 @keyframes airJordan {
   0% {
     opacity: 1;
-    width: 0ch;
+    clip-path: inset(-75% 100% -75% 0);
   }
   10%,
   15% {
-    width: 2.8ch;
+    clip-path: inset(-75% 72% -75% 0);
   }
   35%,
-  99.999999% {
-    opacity: 1;
-    width: 10ch;
-  }
   100% {
     opacity: 1;
-    width: 10ch;
-    overflow: visible;
+    clip-path: inset(-75% 0 -75% 0);
   }
 }
 
